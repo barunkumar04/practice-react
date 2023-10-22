@@ -22,3 +22,7 @@
         - scrips: t start, build, test and eject (to eject from react)
         - lint config
         - browser list
+
+## React execution flow
+    - https://www.youtube.com/watch?v=yNbnA5pryMg&list=PLu71SKxNbfoDqgPchmvIsL4hTnJIrtige&index=3
+    - 
