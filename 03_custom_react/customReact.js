@@ -24,7 +24,7 @@ function constomRander(reactElement, mainContainter){
 }
 
 
-const mainContainter = document.getElementById("#root");
+const mainContainter = document.getElementById(".root");
 
 
 
