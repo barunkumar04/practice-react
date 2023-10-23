@@ -12,7 +12,7 @@ const reactElement = {
 }
 
 
-function constomRander(reactElement, mainContainter){
+function customRender(reactElement, mainContainter){
     const domElementOfTypeA = document.createElement(reactElement.type);
     
     domElementOfTypeA.innerHTML = reactElement.children;
@@ -20,13 +20,16 @@ function constomRander(reactElement, mainContainter){
     domElementOfTypeA.setAttribute('href', reactElement.props.href);
     domElementOfTypeA.setAttribute('target',reactElement.props.target);
 
+    console.log("domElementOfTypeA - ", domElementOfTypeA);
+    console.log("mainContainter - ", mainContainter)
+
     mainContainter.appendChild(domElementOfTypeA);
 }
 
 
-const mainContainter = document.getElementById(".root");
+const mainContainter = document.querySelector("#root");
 
-
+console.log("mainContainter :: ", mainContainter)
 
 // Logic to rander this element
-constomRander(reactElement, mainContainter)
+customRender(reactElement, mainContainter)
