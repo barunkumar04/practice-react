@@ -17,8 +17,15 @@ function customRender(reactElement, mainContainter){
     
     domElementOfTypeA.innerHTML = reactElement.children;
     
-    domElementOfTypeA.setAttribute('href', reactElement.props.href);
-    domElementOfTypeA.setAttribute('target',reactElement.props.target);
+    // domElementOfTypeA.setAttribute('href', reactElement.props.href);
+    // domElementOfTypeA.setAttribute('target',reactElement.props.target);
+
+    // A better and effective way of setting attributes
+
+    for (const prop in reactElement.props) {
+        if (prop === 'children') continue;
+        domElementOfTypeA.setAttribute(prop, reactElement.props[prop]);
+    }
 
     console.log("domElementOfTypeA - ", domElementOfTypeA);
     console.log("mainContainter - ", mainContainter)

@@ -27,3 +27,18 @@
     - https://www.youtube.com/watch?v=yNbnA5pryMg&list=PLu71SKxNbfoDqgPchmvIsL4hTnJIrtige&index=3
 
 ## Creating a custom react library
+    - Refer 03_custom_react
+
+## Explorations 
+    - Refer main.jsx and App.jsx to understand nuanses of few why-how. [IMP]
+
+## React source code
+    - https://github.com/facebook/react
+
+## Hooks
+    - Source code:  https://github.com/facebook/react/blob/main/packages/react/src/ReactHooks.js
+    - Need of hooks
+        - In counter example (App.jsx), eventhough counter variabel value is incremented/decremented,  value on UI is not reflected.
+        - Reason is: In React, UI updates are controlled by Hooks. And, that the need.
+    - Refer source code to understand different types of hooks.
+    - RECAP: Babel
