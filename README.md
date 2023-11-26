@@ -42,3 +42,11 @@
         - Reason is: In React, UI updates are controlled by Hooks. And, that the need.
     - Refer source code to understand different types of hooks.
     - RECAP: Babel
+
+## Virtual DOM, React Fiber and Reconciliation [IMP]
+    - https://www.youtube.com/watch?v=MPCVGFvgVEQ&list=PLu71SKxNbfoDqgPchmvIsL4hTnJIrtige&index=6 
+    - https://github.com/acdlite/react-fiber-architecture
+
+### Feature of React Fibre
+    - Incremental Update: Helpful in animation areas
+    - Pause, Abort or Reuse work as new updates come in.
