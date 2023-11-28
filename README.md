@@ -50,3 +50,8 @@
 ### Feature of React Fibre
     - Incremental Update: Helpful in animation areas
     - Pause, Abort or Reuse work as new updates come in.
+
+## Tailwind
+    - Its a CSS framework
+    - Site and getting started - https://tailwindcss.com
+    - Readymade components - https://www.devui.io
