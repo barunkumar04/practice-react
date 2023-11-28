@@ -55,3 +55,7 @@
     - Its a CSS framework
     - Site and getting started - https://tailwindcss.com
     - Readymade components - https://www.devui.io
+
+## Props = Reusability
+    - Helps making a component re-usable. Example, using same card where ever required.
+    - And, it help passing values. Same as parameter passing.
