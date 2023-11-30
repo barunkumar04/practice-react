@@ -72,4 +72,8 @@
         - So, even though there multiple of setCounter(counter-1), it propagates only one.
     - What if, we really have a scenario where - On one click we have to increment/decrement more than 1 value.
         - Setter method accepts a callback, which can have access of previous state.
-        - Example - 
+        - Example - setCounter((prevCounterValue => prevCounterValue + 1))
+
+## Hook - useCallback
+    - Doc: https://react.dev/reference/react/useCallback
+    - Used for caching function's definition
