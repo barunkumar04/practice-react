@@ -11,7 +11,12 @@ function App() {
 
   const countUp = () => {
     // counter = counter + 1;
-    setCounter(counter + 1);
+    // setCounter(counter + 1);
+    // setCounter(counter + 1);
+    // setCounter(counter + 1);
+    setCounter((prevValueOfCounter => prevValueOfCounter + 1))
+    setCounter((prevValueOfCounter => prevValueOfCounter + 1))
+
     console.log("Count Up - ", Math.random());
     console.log("Counter Value - ", counter);
   }
