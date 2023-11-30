@@ -59,3 +59,17 @@
 ## Props = Reusability
     - Helps making a component re-usable. Example, using same card where ever required.
     - And, it help passing values. Same as parameter passing.
+
+## Interview question on React Fiber and batching [IMP]
+    - Question
+        - In our counter example, what if we have multiple setCounter(counter-1) or setCounter(counter+1)?
+        - Will it add or substract as per occurence or just one?
+    - Answer 
+        - Just one.
+    - Explanation
+        - React fiber's batch processing come to play here.
+        - Since this is a update in UI, React Fiber optmizes it by understanding 'same update'.
+        - So, even though there multiple of setCounter(counter-1), it propagates only one.
+    - What if, we really have a scenario where - On one click we have to increment/decrement more than 1 value.
+        - Setter method accepts a callback, which can have access of previous state.
+        - Example - 
